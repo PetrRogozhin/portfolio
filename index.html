@@ -37,7 +37,7 @@
 					</nav>
 				</div>
 			</div>
-			<div class="works">
+			<div id="works" class="works">
 				<div class="container">
 					<div class="works_main">
 						<h1>w</h1>
@@ -59,68 +59,47 @@
 							<div class="designer" id="designerid">
 								<div class="slider">
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/fix.png" alt="project">
+										<div class="des-works-1">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/fix.png" alt="project">
+										<div class="des-works-2">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/fix.png" alt="project">
+										<div class="des-works-3">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/fix.png" alt="project">
+										<div class="des-works-4">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/fix.png" alt="project">
-									  </div>
-									</div>
-									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/fix.png" alt="project">
+										<div class="des-works-5">
 									  </div>
 									</div>
 								</div>
 							</div>
-							
 							<div class="developer" id="developerid">
 								<div class="slider">
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/blackVersion.png" alt="">
+										<div class="dev-works-1">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/blackVersion.png" alt="">
+										<div class="dev-works-2">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/blackVersion.png" alt="">
+										<div class="dev-works-3">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/blackVersion.png" alt="">
+										<div class="dev-works-4">
 									  </div>
 									</div>
 									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/blackVersion.png" alt="">
-									  </div>
-									</div>
-									<div class="slider_item">
-										<div class="works_img">
-											<img src="img/blackVersion.png" alt="">
+										<div class="dev-works-5">
 									  </div>
 									</div>
 								</div>
@@ -129,7 +108,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="about-me">
+			<div id="about" class="about-me">
 				<div class="container">
 					<div class="about-me__titel">
 						<h1>About me</h1>
@@ -191,14 +170,14 @@
 						</div>
 						<div class="avatar">
 							<div class="located">
-								<div class="located__item"><img src="../img/location.png" alt=""></div>
+								<div class="located__item"><img src="img/location.png" alt=""></div>
 								<div class="located__city"><a href="https://www.google.com/search?q=almaty&oq=almaty&aqs=chrome..69i57j46i433i512j46i175i199i512j0i512j46i175i199i512j69i60l3.4576j0j7&sourceid=chrome&ie=UTF-8" target="_blank"></a>Now in Almaty</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="contacts">
+			<div id="contacts" class="contacts">
 				<div class="container">
 					<h1>contacts</h1>
 					<div class="contacts-body">
@@ -226,14 +205,14 @@
 							</div>
 						</div>
 						<div class="contacts-right">
-							<h3>You can find me theare:</h3>
+							<h3>More links from me:</h3>
 							<a href="" class="social">Awwwards</a>
 							<a href="" class="social">Instagram</a>
 							<a href="" class="social">LinckedIn</a>
 							<a href="" class="social">Telegram</a>
 							<a href="" class="social">GitHub</a>
-							<a href="" class="social">Gmail</a>
-							<a href="" class="bonus">Bonus</a>
+							<a href="#plugin" class="social">Plugins</a>
+							<a href="#keys" class="bonus">Bonus</a>
 						</div>
 					</div>
 				</div>
@@ -254,19 +233,23 @@
 				</div>
 			</footer>
 		</div>
-		<div class="menu-wrapper">
+		<div class="menu-btn">
+					<a href="#menu"><span></span></a>
+		</div>
+		<div id="menu" class="menu-wrapper">
+				<a onclick="history.back()" class="close-btn" ></a>
 				<div class="menu">
 					<div class="menu-list">
 						<div class="menu-item">
-							<a href=""><h2>works</h2></a>
+							<a href="#works"><h2>works</h2></a>
 							<div class="menu-shadow"><h2>works</h2></div>
 						</div>
 						<div class="menu-item">
-							<a href=""><h2>about me</h2></a>
+							<a href="#about"><h2>about me</h2></a>
 							<div class="menu-shadow"><h2>about me</h2></div>
 						</div>
 						<div class="menu-item">
-							<a href=""><h2>contacts</h2></a>
+							<a href="#contacts"><h2>contacts</h2></a>
 							<div class="menu-shadow"><h2>contacts</h2></div>
 						</div>
 					</div>
@@ -283,78 +266,83 @@
 					</div>
 				</div>
 		</div>
-		<div class="keyboard">
-			<h2 class="title">Eyes on the screen</h2>
+		<div id="keys" class="menu-wrapper">
 			<div class="keyboard">
-			  <ul class="row row-0">
-			    <li class="pinky" id="esc">ESC</li>
-			    <li class="pinky" id="1">1</li>
-			    <li class="ring" id="2">2</li>
-			    <li class="middle" id="3">3</li>
-			    <li class="pointer1st" id="4">4</li>
-			    <li class="pointer2nd" id="5">5</li>
-			    <li class="pointer2nd" id="6">6</li>
-			    <li class="pointer1st" id="7">7</li>
-			    <li class="middle" id="8">8</li>
-			    <li class="ring" id="9">9</li>
-			    <li class="pinky" id="10">0</li>
-			    <li class="pinky" >-</li>
-			    <li class="pinky" >+</li>
-			    <li class="pinky" id="back">BACK</li>
-			  </ul>
-			  <ul class="row row-1">
-			    <li class="pinky" id="tab">TAB</li>
-			    <li class="pinky" id="Q">Q</li>
-			    <li class="ring" id="W">W</li>
-			    <li class="middle" id="E">E</li>
-			    <li class="pointer1st" id="R">R</li>
-			    <li class="pointer2nd" id="T">T</li>
-			    <li class="pointer2nd" id="Y">Y</li>
-			    <li class="pointer1st" id="U">U</li>
-			    <li class="middle" id="I">I</li>
-			    <li class="ring" id="O">O</li>
-			    <li class="pinky" id="P">P</li>
-			    <li class="pinky" >[</li>
-			    <li class="pinky" >]</li>
-			    <li class="pinky" >\</li>
-			  </ul>
-			  <ul class="row row-2">
-			    <li class="pinky" id="caps">CAPS</li>
-			    <li class="pinky" id="A">A</li>
-			    <li class="ring" id="S">S</li>
-			    <li class="middle" id="D">D</li>
-			    <li class="pointer1st" id="F">F</li>
-			    <li class="pointer2nd" id="G">G</li>
-			    <li class="pointer2nd" id="H">H</li>
-			    <li class="pointer1st" id="J">J</li>
-			    <li class="middle" id="K">K</li>
-			    <li class="ring" id="L">L</li>
-			    <li class="pinky" >:</li>
-			    <li class="pinky" >''</li>
-			    <li class="pinky" id="enter">ENTER</li>
-			  </ul>
-			  <ul class="row row-3">
-			    <li class="pinky" id="left-shift">SHIFT</li>
-			    <li class="pinky" id="Z">Z</li>
-			    <li class="ring" id="X">X</li>
-			    <li class="middle" id="C">C</li>
-			    <li class="pointer1st" id="V">V</li>
-			    <li class="pointer2nd" id="B">B</li>
-			    <li class="pointer2nd" id="N">N</li>
-			    <li class="pointer1st" id="M">M</li>
-			    <li class="middle" >,</li>
-			    <li class="ring" >.</li>
-			    <li class="pinky" >;</li>
-			    <li class="pinky" id="right-shift">SHIFT</li>
-			  </ul>
+				<h2 class="title">Eyes on the screen</h2>
+				<div class="keyboard">
+				  <ul class="row row-0">
+				    <li class="pinky" id="esc">ESC</li>
+				    <li class="pinky" id="1">1</li>
+				    <li class="ring" id="2">2</li>
+				    <li class="middle" id="3">3</li>
+				    <li class="pointer1st" id="4">4</li>
+				    <li class="pointer2nd" id="5">5</li>
+				    <li class="pointer2nd" id="6">6</li>
+				    <li class="pointer1st" id="7">7</li>
+				    <li class="middle" id="8">8</li>
+				    <li class="ring" id="9">9</li>
+				    <li class="pinky" id="10">0</li>
+				    <li class="pinky" >-</li>
+				    <li class="pinky" >+</li>
+				    <li class="pinky" id="back">BACK</li>
+				  </ul>
+				  <ul class="row row-1">
+				    <li class="pinky" id="tab">TAB</li>
+				    <li class="pinky" id="Q">Q</li>
+				    <li class="ring" id="W">W</li>
+				    <li class="middle" id="E">E</li>
+				    <li class="pointer1st" id="R">R</li>
+				    <li class="pointer2nd" id="T">T</li>
+				    <li class="pointer2nd" id="Y">Y</li>
+				    <li class="pointer1st" id="U">U</li>
+				    <li class="middle" id="I">I</li>
+				    <li class="ring" id="O">O</li>
+				    <li class="pinky" id="P">P</li>
+				    <li class="pinky" >[</li>
+				    <li class="pinky" >]</li>
+				    <li class="pinky" >\</li>
+				  </ul>
+				  <ul class="row row-2">
+				    <li class="pinky" id="caps">CAPS</li>
+				    <li class="pinky" id="A">A</li>
+				    <li class="ring" id="S">S</li>
+				    <li class="middle" id="D">D</li>
+				    <li class="pointer1st" id="F">F</li>
+				    <li class="pointer2nd" id="G">G</li>
+				    <li class="pointer2nd" id="H">H</li>
+				    <li class="pointer1st" id="J">J</li>
+				    <li class="middle" id="K">K</li>
+				    <li class="ring" id="L">L</li>
+				    <li class="pinky" >:</li>
+				    <li class="pinky" >''</li>
+				    <li class="pinky" id="enter">ENTER</li>
+				  </ul>
+				  <ul class="row row-3">
+				    <li class="pinky" id="left-shift">SHIFT</li>
+				    <li class="pinky" id="Z">Z</li>
+				    <li class="ring" id="X">X</li>
+				    <li class="middle" id="C">C</li>
+				    <li class="pointer1st" id="V">V</li>
+				    <li class="pointer2nd" id="B">B</li>
+				    <li class="pointer2nd" id="N">N</li>
+				    <li class="pointer1st" id="M">M</li>
+				    <li class="middle" >,</li>
+				    <li class="ring" >.</li>
+				    <li class="pinky" >;</li>
+				    <li class="pinky" id="right-shift">SHIFT</li>
+				  </ul>
+				</div>
+				<h2 class="title">Hands on the keyboard</h2>
+				<a onclick="history.back()"><h2 class="title">Back</h2></a>
 			</div>
-			<h2 class="title">Hands on the keyboard</h2>
 		</div>
-		
+		<div id="plugin" class="plugin">
+			<p>You can get my WebShtorm plugins</p>
+			<a class="plug-btn" href="https://digiseller.market/asp2/pay_gm.asp?id_d=3106980&id_po=0&cart_uid=&ai=936188&curr=GMC&lang=ru-RU&digiuid=BFBC7186-A158-4F30-B767-E4F0D77627EA&_ow=&_ids_shop=&failpage=https%3A%2F%2Fwww%2Edigiseller%2Emarket%2Fasp2%2Fpay%5Fwm%2Easp%3Fid%5Fd%3D3106980%26lang%3Dru%2DRU%26digiuid%3DBFBC7186%2DA158%2D4F30%2DB767%2DE4F0D77627EA&item_cnt=&promocode=" target="_blank">Get plugins</a>
+			<button onclick="history.back()"><p>Close</p></button>
+		</div>
 
 
-
-		
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main-dist.js"></script>
