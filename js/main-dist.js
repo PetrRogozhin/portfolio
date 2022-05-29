@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:false,
@@ -5,8 +7,11 @@ $(document).ready(function(){
 		centerMode:true,
 		touchThreshold: 100,
 		variableWidth:true,
+		autoplay: true,
+  	autoplaySpeed: 5000,
 	});
 });
+
 
 
 
@@ -18,14 +23,18 @@ const developerSelector = document.getElementById('selector-f');
 
 checkbox.addEventListener( 'click', function () {
   if (checkbox.checked) {
-    designer.style.display = "block";
-    developer.style.display = "none";
+    designer.style='z-index: 1';
+    designer.style.opacity = "1";
+    developer.style='z-index: 0';
+    developer.style.opacity = "1";
     designerSelector.style.opacity = "1";
     developerSelector.style.opacity = "0";
 
   } else {
-    designer.style.display = "none";
-    developer.style.display = "block";
+    designer.style='z-index: 0';
+    developer.style='z-index: 1';
+    designer.style.opacity = "0";
+    developer.style.opacity = "1";
     designerSelector.style.opacity = "0";
     developerSelector.style.opacity = "1";
 
@@ -99,3 +108,13 @@ document.addEventListener("keyup", event => {
 })
 
 targetRandomKey();
+
+
+
+
+
+
+
+
+
+
